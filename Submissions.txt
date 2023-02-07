@@ -1,7 +1,16 @@
 1. How many hours did you spend on this challenge?
+I spent around 8 hours on this challenge.
 
 2. Describe the features you have implemented.
+All of the required features were implemented: 
+For each question, there is most 1 option that can be chosen.
+When the user clicks on show me my results button, he/she cannot  modify the form.
+There is a retake quiz button  that allows the user to take the quiz again.
+The user has to give an option to each question before he/she is able to click on show me my results button and see the results to the quiz.
+If the majority of responses to the form is A, the first element in results is returned, and so on.
 
 3. Describe the difficulties you faced (if any) while working on the challenge and how you tackled them.
+I ran into difficulties when converting the data.json file into data that can be used. What I ultimately decided to do was to convert the data.json file into a js file by wrapping the data as a string, letting that equal the value of a variable, and exporting that variable. Then, I was able to use the variable in my js files by importing it from data.js and parsing it as an object using JSON.parse().
 
 4. How much time can you spend each week working for DP Developers?
+I can spend 5 hours a week for DP Developers on average, but I am flexible with times and am willing to spend longer when needed.
