@@ -1,38 +1,622 @@
-.App {
+* {
+  font-family: 'Times New Roman';
+}
+
+h1 {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  margin: .67em 0;
+  font-family: "Quattrocento Sans",sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+  color: rgb(40, 37, 37);
+  margin-bottom: 10px;
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+h4 {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  font-family: "Quattrocento Sans",sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+  color: inherit;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 21px;
+}
+
+.option {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-family: Georgia,Times,serif;
+  line-height: 1.428571429;
+  color: #333;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 2px solid #F1F1F1;
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 1em;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s;
+  margin-top: 0.5em;
+}
+
+.clicked {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-family: Georgia,Times,serif;
+  line-height: 1.428571429;
+  font-size: 16px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 1em;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s;
+  margin-top: 0.5em;
+  background-color: #456CB3;
+  color: #FFFFFF;
+  border: 2px solid;
+}
+
+.option:hover {
+  background-color: rgb(241, 245, 255);
+  border: 1px solid rgb(127, 157, 217);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.results-btn {
+  display: block;
+  width: 100%;
+  border: 4px solid #456CB3;
+  border-radius: 6px;
+  background-color: #456CB3;
+  color: white;
+  padding: 0.5rem 0;
+  margin-top: 1em;
+}
+
+.results-btn:hover {
+  cursor: pointer;
+}
+
+figcaption {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.author-name {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1.428571429;
+  font-family: "Quattrocento Sans",Helvetica,Arial,sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  background-color: transparent;
+  outline: 0;
+  color: #446cb3;
+  text-decoration: none;
+}
+
+.author-name:hover {
+  color: #555;
+}
+
+.publish-time {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-family: Georgia,Times,serif;
+  line-height: 1.428571429;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 12px;
+  color: #777;
+  text-transform: uppercase;
+}
+
+.mobile-title {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1.428571429;
+  font-family: "Quattrocento Sans",Helvetica,Arial,sans-serif;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.button {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1.428571429;
+  font-family: "Quattrocento Sans",Helvetica,Arial,sans-serif;
+  box-sizing: border-box;
+  font-size: 24px;
+  vertical-align: middle;
+  font-weight: 700;
+  color: #446cb3;
+}
+
+a {
+  text-decoration: none;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-family: Georgia,Times,serif;
+  font-size: 14px;
+  line-height: 1.428571429;
   text-align: center;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: #446cb3;
+  text-decoration: none;
+  flex: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333;
+  box-sizing: border-box;
+  display: block;
+  font-family: "Quattrocento Sans",Helvetica,Arial,sans-serif;
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-utb-header {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333;
+  font-family: "Quattrocento Sans",Helvetica,Arial,sans-serif;
+  box-sizing: border-box;
+  margin-top: 15px;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header-logo {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 14px;
+  line-height: 1.428571429;
+  font-family: "Quattrocento Sans",Helvetica,Arial,sans-serif;
+  text-align: center;
+  color: #446cb3;
+  height: 70px;
+  box-sizing: border-box;
+  border: 0;
+  vertical-align: middle;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+.navbar-toggle {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  position: relative;
+  float: right;
+  margin-right: 15px;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  border-color: white;
+}
+
+.icon-bar {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  color: inherit;
+  font: inherit;
+  text-transform: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  box-sizing: border-box;
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  margin-top: 4px;
+  background-color: #fff;
+}
+
+.logo {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 14px;
+  line-height: 1.428571429;
+  font-family: "Quattrocento Sans",Helvetica,Arial,sans-serif;
+  color: #446cb3;
+  height: 24px;
+  box-sizing: border-box;
+  border: 0;
+  vertical-align: middle;
+  margin: 13px 15px;
+}
+
+li {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 14px;
+  line-height: 1.428571429;
+  background-color: #333;
+  font-family: "Quattrocento Sans",Helvetica,Arial,sans-serif;
+  list-style: none;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+.menu:hover {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+  border: 0.5px solid gray;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333;
+  font-family: "Quattrocento Sans",Helvetica,Arial,sans-serif;
+  box-sizing: border-box;
+  padding-left: 0;
+  list-style: none;
+  margin: 0 -15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 14px;
+  font-family: "Quattrocento Sans",Helvetica,Arial,sans-serif;
+  list-style: none;
+  box-sizing: border-box;
+  background-color: transparent;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+  color: #9d9d9d;
+}
+
+#resultDiv {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-family: Georgia,Times,serif;
+  line-height: 1.428571429;
+  color: #333;
+  box-sizing: border-box;
+  margin-top: 2em;
+  background: #EFF3FA;
+  border-radius: 6px;
+  padding: 2em;
+  font-size: 80%;
+}
+
+#resultDivTitle {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  font-family: "Quattrocento Sans",sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+  color: inherit;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+#resultDivText {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-family: Georgia,Times,serif;
+  line-height: 1.428571429;
+  color: #333;
+  font-size: 80%;
+  box-sizing: border-box;
+  margin: 0 0 10px;
+}
+
+footer {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-family: Georgia,Times,serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333;
+  box-sizing: border-box;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 40px 15px;
+  background-color: #eee;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#button-footer {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-family: Georgia,Times,serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  text-align: center;
+  color: #446cb3;
+  height: 50px;
+  box-sizing: border-box;
+  border: 0;
+  vertical-align: middle;
+  margin-top: 40px;
+}
+
+.under-the-button {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 14px;
+  line-height: 1.428571429;
+  text-align: center;
+  color: #446cb3;
+  box-sizing: border-box;
+  font-family: "Quattrocento Sans",Helvetica,Arial,sans-serif;
+}
+
+.utb-title {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  text-align: center;
+  font-family: "Quattrocento Sans",Helvetica,Arial,sans-serif;
+  box-sizing: border-box;
+  font-size: 38px;
+  color: #222;
+}
+
+.btn {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1.428571429;
+  text-align: center;
+  font-family: "Quattrocento Sans",Helvetica,Arial,sans-serif;
+  box-sizing: border-box;
+  font-size: 38px;
+  font-weight: 700;
+  color: #446cb3;
+}
+
+.social {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-family: Georgia,Times,serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  margin: 10px auto;
+  width: 50%;
+}
+
+.section-links {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  margin: 40px auto;
+  font-family: "Quattrocento Sans",Helvetica,Arial,sans-serif;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-family: Georgia,Times,serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.snworks {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-family: Georgia,Times,serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.snworks-img {
+  font-size: 14px;
+  width: 100px;
+  text-decoration: none;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.navbar-title {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1.428571429;
+  font-family: "Quattrocento Sans",Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 60px;
+  color: #222;
+  vertical-align: middle;
+}
+
+#header-btn-text {
+  font-weight: 700;
+  color: #446cb3;
+}
+
+.navbar-subtitle {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1.428571429;
+  font-family: "Quattrocento Sans",Helvetica,Arial,sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: -10px;
+  font-size: 15px;
+  color: #222;
+  vertical-align: middle;
+}
+
+.navbar-links {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333;
+  font-family: "Quattrocento Sans",Helvetica,Arial,sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  padding: 5px 0;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+}
+
+.navbar-section-link {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 14px;
+  line-height: 1.428571429;
+  font-family: "Quattrocento Sans",Helvetica,Arial,sans-serif;
+  box-sizing: border-box;
+  background-color: transparent;
+  text-decoration: none;
+  flex: 1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.subscribe {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 14px;
+  line-height: 1.428571429;
+  font-family: "Quattrocento Sans",Helvetica,Arial,sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  flex: 1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #466fb1;
+  border-radius: 4px;
+  padding: 0 1rem;
+  margin-bottom: 3px;
+}
+
+.search-field {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 14px;
+  font-family: "Quattrocento Sans",Helvetica,Arial,sans-serif;
+  box-sizing: border-box;
+  flex: 1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222;
+  line-height: 1;
+}
+
+.form-control {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  font: inherit;
+  margin: 0;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  transition: all .2s ease-in-out;
+  display: inline-block;
+  width: 0;
+  height: 18px;
+  margin-top: -6px;
+  padding: 0;
+  vertical-align: middle;
+  border: none;
+}
+
+#search-button {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  display: inline-block;
+  border: none;
+  background: 0 0;
+  padding: 0;
 }
