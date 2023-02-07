@@ -58,9 +58,12 @@ function App() {
       return letter.charCodeAt(0) - 65; //return number version of letter e.g. A --> 0, B --> 1
   };
 
-  function handleClickOption(questionNumber, key) {
-    //answer list is not changed correctly
-    
+  function handleClickOption(questionNumber, key) {    
+    //if already submitted, then clicking should not do anything
+    if (submitted) {
+      return;
+    }
+
     const newAnswers = answers.map((answer, index) =>
         {        
           if (index === questionNumber) {
